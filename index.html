@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/styleSheet.css" rel="stylesheet" />
     <title>Document</title>
-</head>
-<body>
-    <p>test</p>
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <!--container carousel -->
+      <div id="carousel">
+        <div class="img1">
+          <img src="./img/cat1.jpg" alt="img carousel" />
+        </div>
+
+        <div id="main_caroussel">
+          <div class="infos_carousel">
+            <div class="img_infos_caroussel">
+              <img
+                src="./img/cat1.jpg"
+                alt="img carousel"
+                class="img_caroussel"
+              />
+            </div>
+            <div id="text_caroussel">
+              <p class="title">
+                title <br /><span class="game_name"> game name </span> <br />
+                <span class="spectators">2587 spectateurs</span>
+              </p>
+            </div>
+          </div>
+          <div id="container_btn_caroussel">
+            <button class="btn1" disabled>text btn 1</button>
+            <button class="btn2" disabled>text btn 2</button>
+          </div>
+        </div>
+      </div>
+
+      <!--container hero section -->
+      <div id="hero_section">
+        <h3><span>Chaîne live</span> qui pourraient vous plaire</h3>
+        <div class="container_movie">
+          <img src="https://picsum.photos/530/300" alt="movie" />
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

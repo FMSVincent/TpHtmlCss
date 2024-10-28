@@ -136,7 +136,100 @@ h5 {
 .main-content {
     margin-left: 210px;
     padding: 20px;
-    padding-top: 90px;
     color: #333;
 }
 
+.categorie_channel {
+    display: flex;
+    justify-content: space-around;
+}
+
+.channel_game {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5c16c5;      
+    padding: 10px 15px;            
+    border-radius: 8px;             
+    width: 300px;                   
+    border: 1px solid #ccc;     
+    color: white;
+    font-style: bold;
+    font-size: 15px;   
+}
+.channel_game:hover{
+    background-color: blueviolet;
+}
+.channel_game p {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.channel_game img {
+    width: 60px;                    
+    height: 60px;
+}
+
+.category_channel {
+    display: flex;
+    gap: 10px;       
+    margin-top: 20px;   
+    font-size: 22px; 
+    font-weight: bold;   
+}
+
+.category_channel p {
+    margin: 0;                     
+}
+
+
+
+.category{
+    color: purple;
+    border-bottom: 3px solid purple;
+}
+
+.search_tag{
+    margin-top: 20px;
+}
+
+#title_parcourir{
+    font-size: 72px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr); 
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.card-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+    color: #333333;
+    padding-top: 10px;
+    margin: 0;
+
+}
+.viewer-count {
+    font-size: 14px;
+    color: #666666;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}

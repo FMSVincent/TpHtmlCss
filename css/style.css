@@ -81,8 +81,6 @@
     height: calc(100vh - 65px);
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
-    padding: 10px; 
     color: black;    
     border-left: 2px solid black;
     overflow-y: auto;
@@ -91,25 +89,37 @@
 h5 {
     margin: 0; 
     color: black;
-    font-size: 12px;
+    font-size: 10px;
 }
+
+
+
+.channel_recom h5 {
+    margin: 10px;
+    font-weight: bold;
+    justify-content: center;
+    font-size: 13px;
+}
+
 
 .channel-info {
     display: flex;
     align-items: flex-start; 
     margin-top: 10px; 
-    margin-bottom: 5px;      
+    margin-bottom: 5px; 
+    
 }
 
 .channel-info:hover {
-    background-color: yellow;
+    background-color: rgb(147, 147, 144);
 }
 
 .channel-image {
     width: 40px;              
     height: 40px;
     border-radius: 50%;       
-    margin-right: 10px;      
+    margin-right: 10px;
+    margin-left: 10px;      
 }
 
 .channel-details {
@@ -139,7 +149,7 @@ h5 {
 
 .categorie_channel {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     gap: 10px;
     margin-top: 20px;   
@@ -154,12 +164,13 @@ h5 {
     background-color: #5c16c5;      
     padding: 10px 15px;            
     border-radius: 8px;             
-    flex: 1 1 30%; 
-    max-width: 300px;     
+    flex: 1 1 0; 
+    max-width: 100%; 
     border: 1px solid #ccc;     
     color: white;
     font-style: bold;
     font-size: 15px;   
+    min-width: 250px; 
 }
 
 .channel_game:hover {
@@ -175,6 +186,12 @@ h5 {
 .channel_game img {
     width: 60px;                    
     height: 60px;
+}
+
+.category_channel{
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
 }
 
 .category {
@@ -226,15 +243,21 @@ h5 {
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1444px) {
     .head {
         flex-wrap: wrap; 
     }
 
     .lateral_menu {
         width: 150px; 
-        padding: 10px 0; 
+        padding: 10px 0;
+        margin-top: 10px; 
     }
+
+    .lateral_menu .channel_recom{
+        display: none; 
+    }
+
 
     .main-content {
         margin-left: 160px; 
@@ -242,12 +265,13 @@ h5 {
     }
 
     .categorie_channel {
-        font-size: 20px; 
+        flex-wrap: wrap; 
     }
 
     .channel_game {
         flex: 1 1 45%; 
-        margin: 10px 0; 
+        max-width: 45%; 
+        margin: 10px 0;
     }
 
     #search_bar {
@@ -276,9 +300,17 @@ h5 {
         align-items: center; 
     }
 
+
+    .lateral_menu .channel_recom{
+        display: none; 
+    }
+
     .lateral_menu .channel-details {
         display: none; 
     }
+
+
+    
 
     .main-content {
         margin-left: 60px; 
@@ -286,13 +318,14 @@ h5 {
     }
 
     .categorie_channel {
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         justify-content: space-around; 
     }
 
     .channel_game {
-        width: 100%; 
-        margin: 10px 0; 
+        flex: 1 1 45%; 
+        max-width: 100%; 
+        margin: 10px 0;
     }
 
     .card-container {
@@ -332,3 +365,4 @@ h5 {
         height: 30px; 
     }
 }
+

@@ -1,3 +1,4 @@
+* {margin: 0;padding: 0; box-sizing: border-box;}
 /* Caroussel */
 
 #main_caroussel {
@@ -14,11 +15,11 @@
 
 .img1 {
   width: 730px;
-  height: 300px;
+  height: 250px;
 }
 
 .infos_carousel {
-  max-width: 230px;
+  max-width: 290px;
   display: flex;
 }
 
@@ -68,25 +69,32 @@
 
 .btn1, .btn2 {
   width: 40%;
+  font-size: small;
   color: gray;
   font-weight: 700;
   border: none;
-  background-color: #e1e7e7;
-  padding: 4px;
+  padding: 5px;
   border-radius: 10px;
+  margin-top: 5px;
 }
 
-
+.chevron_left {
+  margin-top: 120px;
+  margin-right: 50px;
+  font-size: 25px;
+}
 
 /* Hero section */
 
 .hero_section {
   margin-left: 240px;
+  margin-top: 30px;
 }
 
 .container_movie {
   display: flex;
   justify-content: space-around;
+  margin-top: 15px;
 }
 
 .purple {
@@ -118,9 +126,57 @@
 }
 
 .display_more {
-  padding-left: 5px;
+  min-width: 110px;
+  padding-left: 10px;
   padding-right: 5px;
+  font-weight: 600;
+  font-size: 14px;
 }
+
+.footer_infos_img {
+  width: 15%;
+  margin-right: 8px;
+}
+
+.img_footer_infos {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.container_footer_infos_movie {
+  display: flex;
+}
+
+.title_footer_infos_movie {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.description_infos_movie {
+  font-size: 14px;
+  margin: 0;
+  color: gray;
+  padding-top: 2px;
+}
+
+.icon_svg {
+  display: flex;
+}
+
+.btn_footer {
+  margin-right: 8px;
+  margin-top: 5px;
+  width: 80px;
+  border-radius: 10px;
+  color: gray;
+  border: none;
+  padding: 5px;
+}
+
+
+
 /* MEDIA*/
 
 @media only screen and (max-width: 1000px) {
@@ -133,11 +189,21 @@
     display: none;
   }
 
-  .last {
-    display: none;
-  }
-
   #carousel {
     margin-left: 40%;
   }
+}
+
+@media only screen and (max-width: 1600px) {  
+  .last_one {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {  
+  .last_two {
+    display: none;
+  }
+
 }

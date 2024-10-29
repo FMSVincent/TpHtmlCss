@@ -7,11 +7,10 @@
 #carousel {
   display: flex;
   width: 40%;
-  margin-left: 34%;
+  margin-left: 38%;
   margin-bottom: 5%;
   box-shadow: 10px 5px 5px #e9e9e9;
 }
-
 
 .img1 {
   width: 730px;
@@ -19,7 +18,7 @@
 }
 
 .infos_carousel {
-  width: 230px;
+  max-width: 230px;
   display: flex;
 }
 
@@ -81,14 +80,13 @@
 
 /* Hero section */
 
-#hero_section {
-  margin-left: 13%;
-  margin-right: 1.5%;
+.hero_section {
+  margin-left: 240px;
 }
 
 .container_movie {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .purple {
@@ -98,6 +96,7 @@
 
 .container_img_section {
   width: 320px;
+  margin-right: 5px;
 }
 
 .img_section {
@@ -105,7 +104,7 @@
   height: 100%;
 }
 
-#container_footer_movie {
+.container_footer_movie {
   display: flex;
   width: 100%;
   align-items: center;
@@ -124,7 +123,7 @@
 }
 /* MEDIA*/
 
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 1000px) {
   .img1 {
     width: 530px;
     height: 300px;
@@ -132,5 +131,13 @@
 
   #main_caroussel {
     display: none;
+  }
+
+  .last {
+    display: none;
+  }
+
+  #carousel {
+    margin-left: 40%;
   }
 }

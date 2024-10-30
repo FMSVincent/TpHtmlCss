@@ -170,15 +170,19 @@
   padding: 5px;
 }
 
-
+.hero_section_deux {
+  margin-left: 240px;
+}
 
 /* MEDIA*/
 
-@media screen and (min-width: 961px) and (max-width: 1024px) {
-main {
-  width: calc(100% - 200px);
-  margin: 0 auto;
-}
+@media screen and (min-width: 761px) and (max-width: 1024px) {
+
+  .hero_section, .hero_section_deux {
+    width: 500px;
+    margin-left: 35%;
+
+  }
 
   .img1 {
     width: 530px;
@@ -229,6 +233,10 @@ main {
     .hero_section {
       margin: 0;
       margin-top: 250px;
+      padding: 0;
+    }
+    .hero_section_deux {
+      margin: 0;
       padding: 0;
     }
 

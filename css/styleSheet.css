@@ -175,6 +175,11 @@
 /* MEDIA*/
 
 @media screen and (min-width: 961px) and (max-width: 1024px) {
+main {
+  width: calc(100% - 200px);
+  margin: 0 auto;
+}
+
   .img1 {
     width: 530px;
     height: 300px;
@@ -187,6 +192,9 @@
   #carousel {
     margin-left: 40%;
   }
+  .last_three {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1600px) {  
@@ -194,14 +202,21 @@
     display: none;
   }
 
+
 }
 
 @media only screen and (max-width: 1200px) {  
   .last_two {
     display: none;
   }
+  #main_caroussel {
+    display: none;
+  }
+  .last_three {
+    display: none;
+  }
 }
-  @media only screen and (max-width: 960px) {
+  @media only screen and (max-width: 760px) {
     main {
       width: calc(100% - 200px);
       margin: 0 auto;
@@ -217,6 +232,10 @@
       padding: 0;
     }
 
+    #main_caroussel {
+      display: none;
+    }
+
     .container_movie {
       display: block;
     }
@@ -230,4 +249,5 @@
     #carousel {
       display: none;
     }
+    
 }
